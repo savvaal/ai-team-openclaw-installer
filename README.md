@@ -2,6 +2,19 @@
 
 Готовая команда ИИ-агентов для OpenClaw: координатор, технарь, маркетолог, продюсер, копирайтер и дизайнер.
 
+## Premium Deutsch: Eine-Kommando-Installation
+
+Für deutschsprachige Kunden, die OpenClaw + KI-Team möglichst einfach installieren wollen:
+
+```bash
+git clone https://github.com/savvaal/ai-team-openclaw-installer.git
+cd ai-team-openclaw-installer
+./bootstrap-de.sh
+```
+
+Details: [`de/START-HERE.md`](de/START-HERE.md) und [`de/CREATE-YOUR-OWN-TEAM.md`](de/CREATE-YOUR-OWN-TEAM.md).
+
+
 ## Для кого
 
 Для нового клиента, который хочет быстро поставить себе готовую структуру ИИ-команды на свой компьютер.
