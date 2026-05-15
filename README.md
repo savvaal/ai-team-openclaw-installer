@@ -67,3 +67,16 @@ openclaw gateway restart
 ## Безопасность
 
 В репозитории нет личной памяти владельца, переписок, токенов, ключей, PDF/ZIP/PNG и рабочих файлов.
+
+## Deutsche Version
+
+Für Kunden, die direkt eine deutsche KI-Team-Struktur installieren wollen:
+
+```bash
+git clone https://github.com/savvaal/ai-team-openclaw-installer.git
+cd ai-team-openclaw-installer
+./install-de.sh
+openclaw gateway restart
+```
+
+Mehr dazu: [`de/README.md`](de/README.md).
