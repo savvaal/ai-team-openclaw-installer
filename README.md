@@ -1,29 +1,69 @@
 # AI Team for OpenClaw
 
-Готовая команда ИИ-агентов для OpenClaw: координатор, технарь, маркетолог, продюсер, копирайтер, дизайнер.
+Готовая команда ИИ-агентов для OpenClaw: координатор, технарь, маркетолог, продюсер, копирайтер и дизайнер.
 
-## Установка
+## Для кого
+
+Для нового клиента, который хочет быстро поставить себе готовую структуру ИИ-команды на свой компьютер.
+
+## Требования
+
+- macOS или Linux
+- установленный OpenClaw
+- `git` в терминале
+
+Проверка:
 
 ```bash
-git clone <YOUR_GITHUB_REPO_URL> ai-team
-cd ai-team
+openclaw --version
+git --version
+```
+
+## Установка по ссылке GitHub
+
+```bash
+git clone <GITHUB_REPO_URL> ai-team-openclaw
+cd ai-team-openclaw
 ./install.sh
 ```
 
-После установки перезапустите OpenClaw Gateway, если агенты не появились автоматически.
+Если нужно перезаписать уже существующие файлы агентов:
 
-## Что устанавливается
+```bash
+./install.sh --overwrite
+```
 
-Файлы агентов копируются в `~/.openclaw/workspace-*`:
+## Что установится
 
-- `workspace-coordinator`
-- `workspace-tech`
-- `workspace-marketer`
-- `workspace-producer`
-- `workspace-copywriter`
-- `workspace-designer`
+Скрипт создаст/обновит папки:
+
+- `~/.openclaw/workspace-coordinator`
+- `~/.openclaw/workspace-tech`
+- `~/.openclaw/workspace-marketer`
+- `~/.openclaw/workspace-producer`
+- `~/.openclaw/workspace-copywriter`
+- `~/.openclaw/workspace-designer`
+
+В каждую папку будут добавлены:
+
+- `AGENTS.md` — роль и рабочие правила агента
+- `IDENTITY.md` — короткое описание агента
+- `SOUL.md` — стиль общения
+- `USER.md` — шаблон пользовательского контекста
+- `MEMORY.md` — пустая рабочая память
+- `TOOLS.md` — пустые локальные заметки
+- `HEARTBEAT.md` — пустые периодические задачи
+
+## После установки
+
+Если OpenClaw уже запущен, перезапустите Gateway:
+
+```bash
+openclaw gateway restart
+```
+
+Потом откройте OpenClaw и проверьте, что агенты появились.
 
 ## Безопасность
 
-В пакет не входят личная память, история переписок, токены, PDF/ZIP/PNG и рабочие файлы владельца.
-Перед публикацией всё равно проверьте содержимое репозитория.
+В репозитории нет личной памяти владельца, переписок, токенов, ключей, PDF/ZIP/PNG и рабочих файлов.
